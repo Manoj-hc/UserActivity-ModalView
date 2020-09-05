@@ -59,10 +59,9 @@ class UserTable extends UserModal {
     render() {
 
         return (
-            <>
+            < div className="user-table">
                 <div className="main-div ">
                     
-
                     <table className="table table-striped">
                         <thead>
                             <tr className= "table-head">
@@ -84,7 +83,7 @@ class UserTable extends UserModal {
                  userDetails={this.state.userData} 
                  closeModal={this.closeModal}
                 />
-            </>
+            </ div>
         )
 
     }

@@ -32,9 +32,9 @@ class UserModal extends Component {
 
         return (
 
-            <>
+            < div className="user-modal" >
                 <Modal isOpen={this.props.openModal} toggle={this.props.closeModal}>
-                    <ModalHeader toggle={this.props.closeModal}><h2 className="text-center font-weight-bold"> Activity Details</h2></ModalHeader>
+                    <ModalHeader toggle={this.props.closeModal}>Activity Details</ModalHeader>
                     <ModalBody>
 
                         <h4 className="text-center font-weight-bold">{this.props.userDetails.real_name}</h4>
@@ -45,19 +45,12 @@ class UserModal extends Component {
                             endAccessor="end"
                             style={{ height: 500 }}
                         />
-                        {/* <Calendar
-                            localizer={localizer}
-                            events={this.props.userDetails.activity_periods}
-                            startAccessor="start"
-                            endAccessor="end"
-                            style={{ height: 500 }}
-                        /> */}
                     </ModalBody>
                     <ModalFooter>
                         <Button color="secondary" onClick={this.props.closeModal}>Cancel</Button>
                     </ModalFooter>
                 </Modal>
-            </>
+            </ div>
 
         )
     }
