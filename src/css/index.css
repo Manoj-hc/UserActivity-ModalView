@@ -1,0 +1,37 @@
+body {
+  font-weight: normal;
+  font-style: normal;
+  background: linear-gradient(80deg, #4158d0, #c850c0);
+  font-family: Arial, Helvetica, sans-serif;
+}
+p{
+  font-size: 20px;
+}
+.user-header{
+  text-align: center;
+  color: rgb(255, 253, 253);
+}
+.user-header h4{
+  font-size:40px;
+}
+
+@media (max-width: 767px) {
+  p{
+    font-size: 18px;
+  }
+  .user-header h4{
+    font-size:35px;
+  }
+}
+
+@media (max-width: 575px) {
+  p{
+    font-size: 16px;
+  }
+  .user-header h4{
+    font-size:30px;
+  }
+}
+
+
+
